@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Spartan:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/x.css">
+    <title>Take Cats</title>
+</head>
+
+<body class="fondo">
+  <nav>
+    <ul>
+      <li class="adoptar"><a href="#">Adoptar</a></li>
+      <li class="tituloMenu">Take Cats</li>
+      <li class="publicar"><a href="./publicar.html">Publicar</a></li>
+    </ul>
+  </nav>
+
+  <h1>Adoptá un gatito para ser feliz</h1>
+  <p id="Opublica">O publicá uno para que encuentre una familia ↑</p>
+  
+  <div class="divImagenes">
+    <aside>
+      <img id="img1" src="./multimedia/gato negro y blanco.jpeg" alt="gata tricolor" width="280" height="320"><br>
+      <button class="btnAdoptar" id="btnAdoptar1">Adoptar</button>
+    </aside>
+
+    <aside>
+      <img id="img2" src="./multimedia/gato blanco peludo.jpeg" alt="gato blanco peludo" width="280" height="320"><br>
+      <button class="btnAdoptar" id="btnAdoptar2">Adoptar</button>
+    </aside>
+    
+    <aside>
+      <img id="img3" src="./multimedia/gato gris.jpeg" alt="gato gris" width="280" height="320"><br>
+      <button class="btnAdoptar" id="btnAdoptar3">Adoptar</button>
+    </aside>
+    
+    <aside>
+      <img id="img4" src="./multimedia/gato naranja y blanco.jpeg" alt="gato narnja pecho blanco" width="280" height="320">
+      <button class="btnAdoptar" id="btnAdoptar4">Adoptar</button>
+    </aside>
+    
+    <aside>
+      <img id="img5" src="./multimedia/gato blanco y gris.jpeg" alt="gata tricolor" width="280" height="320">
+      <button class="btnAdoptar" id="btnAdoptar5">Adoptar</button>
+    </aside>
+    
+    <aside>
+      <img id="img6" src="./multimedia/gato marron y blanco.jpeg" alt="gato blanco peludo" width="280" height="320">
+      <button class="btnAdoptar" id="btnAdoptar6">Adoptar</button>
+    </aside>
+    
+    <aside>
+      <img id="img7" src="./multimedia/gato blanco y atigrado peludo.jpeg" alt="gato gris" width="280" height="320">
+      <button class="btnAdoptar" id="btnAdoptar7">Adoptar</button>
+    </aside>
+
+    <aside>
+      <img id="img8" src="./multimedia/gata tricolor.jpeg" alt="gato narnja pecho blanco" width="280" height="320">
+      <button class="btnAdoptar" id="btnAdoptar8">Adoptar</button>
+    </aside>
+
+    <aside>
+      <img id="img9" src="./multimedia/gato negro ojos celestes.jpg" alt="gato negro" width="280" height="320">
+      <button class="btnAdoptar" id="btnAdoptar9">Adoptar</button>
+    </aside>
+
+    <aside>
+      <img id="img10" src="./multimedia/gato atigrado.jpeg" alt="gato atigrado" width="280" height="320"> 
+      <button class="btnAdoptar" id="btnAdoptar10">Adoptar</button>
+    </aside>
+    
+    <aside>
+      <img id="img11" src="./multimedia/gato naranja.jpg" alt="gato narnja" width="280" height="320">
+      <button class="btnAdoptar" id="btnAdoptar11">Adoptar</button>
+    </aside>
+
+    <aside>
+      <img id="img12" src="./multimedia/gato blanco.jpeg" alt="gato blanco" width="280" height="320">
+      <button class="btnAdoptar" id="btnAdoptar12">Adoptar</button>
+    </aside>
+  </div>
+
+
+  <div class="popup1" id="cuadroDeAdopcion">
+
+    <div class="formularioAdopar" id="formularioAdoptar">
+      <form action="" >
+        <div class="divCruz">
+          <button id="btnCruz">X</button>
+        </div>
+        <h2 class="tituloAdoptarPopup">ADOPTAR</h2>
+        <label for="nombre" >Nombre del gatito que querés adoptar:</label><br>
+        <input type="text" name="nombre" class="espaciosAdoptar"><br>    
+        
+        <label for="entrega">Preferis que:</label><br>
+        <select name="entrega" class="espaciosAdoptar" id="seleccionarOpcion">
+  
+          <option value="1">Seleccionar...</option>
+          <option id="opcionEnvioDomicilio" value="2">Lo llevemos a tu domicilo</option>
+          <option id="opcionPuntoDeRetiro" value="3">Pactar un punto para buscarlo</option>
+        
+        </select>
+        <br>
+        <button id="btnSiguiente">SIGUIENTE</button>
+  
+      </form>
+    </div>
+
+  </div>
+
+  <div class="popupEnvioDomicilio" id="popupEnvioDomicilio">
+    <div id="formEnvioDomicilio">
+      <form action="" class="envio">
+
+        <div class="divCruz">
+          <button id="cerrarEnvioDomicilio">X</button>
+        </div>
+        <h2>¡Te lo llevamos a tu domicilio!</h2>
+  
+        <label for="direccion">Dirección:</label><br>
+        <input type="text" name="direccion" id="direccionEnvio"><br>    
+        <br>
+        <label for="barrio">Barrio:</label><br>
+        <input type="text" name="barrio" id="barrioEnvio"><br>
+        <br>
+        <label for="celular">Número de contacto:</label><br>
+        <input type="number" name="celular" id="celularEnvio"><br>
+        <br>
+        <label for="email">Mail:</label><br>
+        <input type="email" name="email" id="mailEnvio"><br>
+        <br>
+        <button id="btnEnviarParaEnvio">ENVIAR</button>
+
+        <p class="tEnviaremosMail"> Te enviaremos un mail comunicandote el costo y la fecha de entrega! </p>
+      
+      </form>
+    </div>
+  </div>
+
+
+  <div class="popupPuntoDeEntrega" id="popupPuntoDeEntrega">
+    <div id="formPuntoDeEntrega">
+      <form action="" class="puntoDeEntrega">
+
+        <div class="divCruz">
+          <button id="cerrarPuntoDeEntrega">X</button>
+        </div>
+
+        <h2>¡Coordinemos un punto de entrega!</h2>
+  
+        <label for="barrio">Barrio/s de preferencia:</label><br>
+        <input type="text" name="barrio"><br>
+        <br>
+        <label for="celular">Número de contacto:</label><br>
+        <input type="number" name="celular"><br>
+        <br>
+        <label for="email">Mail:</label><br>
+        <input type="email" name="email" ><br>
+        <br>
+        <button id="btnEnviarParaRetiro">ENVIAR</button>
+  
+        <p class="tEnviaremosMail"> Te enviaremos un mail proponiendote un punto y una fecha de entrega! </p>
+      
+  
+      </form>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,578 @@
+.fondo{
+    background-image: url(../multimedia/fondoVintage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{ 
+    font-family: 'Spartan', sans-serif;
+    color: rgba(0, 0, 0, 0.71);
+    font-size: 19px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+h2{
+    font-family: 'Spartan', sans-serif;
+    color: rgba(0, 0, 0, 0.60);
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 17px;
+}
+
+#Opublica{
+    font-family: 'Spartan', sans-serif;
+    color: rgba(0, 0, 0, 0.94);
+    font-size: 13px;
+    text-align: right;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+p{
+    font-family: 'Spartan', sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 17px;
+    margin-top: 70px;
+}
+
+label{
+    font-family: 'Spartan', sans-serif;
+}
+
+/* BARRA DE MENU */
+
+nav{
+    background-color:rgba(136, 78, 14, 0.22);
+    height: 100px;
+    ul{
+        grid-template-columns: 1fr 2fr 1fr;
+        display: grid;
+
+        li{
+            list-style-type: none;
+            grid-template-columns: 1fr 2fr 1fr;
+            text-align: center;
+            align-items: center;
+            a{
+                font-size: 18px;   
+                color: black;
+                text-align: center;
+                align-items: center;  
+                text-transform: uppercase;
+                text-decoration-line: none;
+            }
+        }
+    }
+}
+
+.tituloMenu{
+    font-family: 'Bad Script', cursive;
+    text-transform: uppercase;
+    font-size: 60px;
+    color: rgba(0, 0, 0, 0.71);
+}
+
+.adoptar{
+    font-family: 'Spartan', sans-serif;
+    margin-top: 40px;
+}
+
+.publicar{
+    font-family: 'Spartan', sans-serif;
+    font-weight: 30px;
+    margin-top: 40px;
+}
+
+
+
+/* IMAGENES DE GATOS*/
+
+.divImagenes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    aside{
+        img{
+            margin-top: 50px;
+            margin-left: 15px;
+            margin-right: 15px;
+            padding: 6px;
+            background-color: white;
+        }
+        
+        
+        /* BOTON ADOPTAR */
+        .btnAdoptar{
+            border: 0.6px solid rgba(86, 59, 17, 0.38);
+            background-color: #fff;
+            height: 30px;
+            width: 160px;
+            font-family: 'Spartan', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            font-size: 12px;
+        }
+        .btnAdoptar:hover{
+            cursor:pointer;
+        }
+
+    }
+}
+
+
+/*FORMULARIO adoptar */
+
+.visible{
+    visibility: visible;
+}
+
+.popup1{
+    background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+    visibility: hidden;
+
+
+    .formularioAdopar{
+        font-family: 'Spartan', sans-serif;
+        background: #F8F8F8;
+        padding: 10px;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+        border-radius: 3px;
+        text-align: center;
+        width: 600px;
+        height: 300px;
+        
+       /* .popup {
+        
+            transition: .3s ease all;
+            transform: scale(0.7);
+            opacity: 0;
+        }
+        */
+        .divCruz{
+            padding: 3px;
+            margin-left: 10px;
+            text-align: right;
+            #btnCruz{
+                border: 0;
+                background-color: #F8F8F8;
+                margin-left: 3px;
+                padding-left: 0px;
+                margin-bottom: 0px;
+                margin-top: 5px;
+                margin-bottom: 10px;
+            }
+            #btnCruz:hover{
+                cursor:pointer;
+            }
+        }
+
+        .tituloAdoptarPopup{
+            margin-top: 0px;
+            margin-bottom: 35px;
+            font-weight: bold; 
+        }
+        .espaciosAdoptar{
+            width: 300px;
+            height: 25px;
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+
+        select{
+            font-family: 'Spartan', sans-serif;
+            
+            option{
+                font-family: 'Spartan', sans-serif;
+            }
+        }
+
+        #btnSiguiente{
+            font-family: 'Spartan', sans-serif;
+            color: black;
+            border: 0.6px solid rgba(8, 8, 8, 0.38);
+            border-radius: 3px;
+            background-color: #fff;
+            height: 30px;
+            width: 160px;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            font-size: 12px;  
+            font-weight: bold;  
+        }
+        #btnSiguiente:hover{
+                cursor:pointer;
+        }
+    }
+}
+
+
+//ENVIO DOMICILIO
+
+//cerrar
+
+.divCruz{
+    padding: 3px;
+    margin-left: 10px;
+    text-align: right;
+    #cerrarEnvioDomicilio{
+        text-align: left;
+        align-items: start;
+        border: 0;
+        background-color: #F8F8F8;
+        margin-left: 3px;
+        padding-left: 0px;
+        margin-bottom: 0px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    #cerrarEnvioDomicilio:hover{
+        cursor:pointer;
+    }
+}
+
+//cartel envio a domicilio
+
+.popupEnvioDomicilio{
+    background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+    visibility: hidden;
+    
+    #formEnvioDomicilio{
+        font-family: 'Spartan', sans-serif;
+        background: #F8F8F8;
+        padding: 10px;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+        border-radius: 3px;
+        text-align: center;
+        width: 600px;
+        height: 450px;
+    }
+
+    #btnEnviarParaEnvio{
+        font-family: 'Spartan', sans-serif;
+        color: black;
+        border: 0.6px solid rgba(8, 8, 8, 0.38);
+        border-radius: 3px;
+        background-color: rgba(92, 90, 90, 0.158);
+        height: 30px;
+        width: 160px;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        font-size: 12px;  
+        font-weight: bold;  
+    }
+    #btnEnviarParaEnvio:hover{
+        cursor:pointer;
+    }
+}
+
+//PUNTO DE ENTREGA
+
+//cerrar
+
+.divCruz{
+    padding: 3px;
+    margin-left: 10px;
+    text-align: right;
+    #cerrarPuntoDeEntrega{
+        text-align: left;
+        align-items: start;
+        border: 0;
+        background-color: #F8F8F8;
+        margin-left: 3px;
+        padding-left: 0px;
+        margin-bottom: 0px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    #cerrarPuntoDeEntrega:hover{
+        cursor:pointer;
+    }
+}
+
+// cartel punto de entrega
+
+.popupPuntoDeEntrega{
+    background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+    visibility: hidden;
+
+    #formPuntoDeEntrega{
+        font-family: 'Spartan', sans-serif;
+        background: #F8F8F8;
+        padding: 10px;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+        border-radius: 3px;
+        text-align: center;
+        width: 600px;
+        height: 420px;
+    }
+
+    #btnEnviarParaRetiro{
+        font-family: 'Spartan', sans-serif;
+        color: black;
+        border: 0.6px solid rgba(8, 8, 8, 0.38);
+        border-radius: 3px;
+        background-color: rgba(92, 90, 90, 0.158);
+        height: 30px;
+        width: 160px;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        font-size: 12px;  
+        font-weight: bold;  
+    }
+    #btnEnviarParaRetiro:hover{
+        cursor:pointer;
+    }
+}
+
+
+
+.tEnviaremosMail{
+    margin-top: 25px;
+}
+
+
+
+// P U BL I C A R 
+
+/*FORMULARIO publicar */
+
+section{
+    background-color: rgba(136, 78, 14, 0.22);
+    height: 240px;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 50px;
+
+    .formularioPublicar{
+        align-items: center;
+        text-align: center;
+        
+        label{
+            align-items: left;
+            text-align: left;
+            
+        }
+        input{
+            align-items: center;
+            text-align: center;
+            height: 20px;
+            width: 350px;
+            background-color: rgb(252, 252, 252);
+            padding: 10px;
+        }
+        
+    }
+
+    
+}
+
+aside{
+        text-align: center;
+        align-items: center;
+        #botonPublicar{
+            border: 1px solid rgba(86, 59, 17, 0.77);
+            background-color: #fff;
+            height: 30px;
+            width: 160px;
+            font-family: 'Spartan', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            font-size: 12px;
+        }
+        #botonPublicar:hover{
+            cursor: pointer;
+        }
+
+        
+    }
+.espacioFormulario{
+    margin-top: 100px;
+            padding: 50px;
+            padding-bottom: 40px;
+            margin-bottom: 200px;
+}
+
+
+
+
+/*MOBILE*/
+
+
+@media (min-width:320px) and (max-width:599px){
+
+
+    h1{
+        font-size: 16px;
+    }
+
+    h2{
+        margin-top: 30px;
+        font-size: 14px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    #Opublica{
+        display: none;
+    }
+    
+    /* MENU CELU*/
+
+    nav{
+        height: 80px;
+        ul{
+            
+            li{
+                
+                a{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .tituloMenu{
+        font-size: 34px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: -10px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .adoptar{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: -20px;
+        text-align: left;
+        align-items: left;
+    }
+    
+    .publicar{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-right: 10px;
+        text-align: right;
+        align-items: right;
+    }
+    
+    /* IMAGENES CELU*/
+
+    div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        img{
+            width: 180px;
+            height: 10;
+            margin: 12px;
+            padding: 5px;
+            border: 30px;
+            background-color: white;
+        }
+    }
+
+    /*FORMULARIO CELU */
+    form{
+        align-items: center;
+        text-align: center;
+        label{
+            align-items: center;
+            text-align: center;
+        }
+        input{
+            align-items: center;
+            text-align: center;
+        }
+        button{
+            align-items: center;
+        }
+    }
+}
+
+/*TABLET*/
+@media (min-width:600px) and (max-width:1000px){
+    
+    /* MENU CELU*/
+
+    nav{
+        height: 80px;
+        ul{
+            
+            li{
+                
+                a{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .tituloMenu{
+        font-size: 34px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: -10px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .adoptar{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: -20px;
+        text-align: left;
+        align-items: left;
+    }
+    
+    .publicar{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-right: 25px;
+        text-align: right;
+        align-items: right;
+    }
+    
+    /* IMAGENES TABLET*/
+
+    div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        img{
+            width: 200px;
+            height: 100;
+            margin: 12px;
+            padding: 5px;
+            border: 30px;
+            background-color: white;
+        }
+    
+    }
+   
+}
