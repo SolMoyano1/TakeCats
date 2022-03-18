@@ -74,7 +74,7 @@ nav {
 /* IMAGENES DE GATOS*/
 .divImagenes {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; }
+  grid-template-columns: 1fr 1fr 1fr; }
   .divImagenes aside {
     /* BOTON ADOPTAR */ }
     .divImagenes aside img {
@@ -317,6 +317,11 @@ aside {
   padding-bottom: 40px;
   margin-bottom: 200px; }
 
+#agregarGracias {
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 2px; }
+
 /*MOBILE*/
 @media (min-width: 320px) and (max-width: 599px) {
   h1 {
@@ -353,16 +358,9 @@ aside {
     text-align: right;
     align-items: right; }
   /* IMAGENES CELU*/
-  div {
+  .divImagenes {
     display: grid;
-    grid-template-columns: 1fr 1fr; }
-    div img {
-      width: 180px;
-      height: 10;
-      margin: 12px;
-      padding: 5px;
-      border: 30px;
-      background-color: white; }
+    grid-template-columns: 1fr; }
   /*FORMULARIO CELU */
   form {
     align-items: center;

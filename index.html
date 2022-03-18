@@ -12,6 +12,7 @@
 </head>
 
 <body class="fondo">
+
   <nav>
     <ul>
       <li class="adoptar"><a href="#">Adoptar</a></li>
@@ -23,68 +24,9 @@
   <h1>Adoptá un gatito para ser feliz</h1>
   <p id="Opublica">O publicá uno para que encuentre una familia ↑</p>
   
-  <div class="divImagenes">
-    <aside>
-      <img id="img1" src="./multimedia/gato negro y blanco.jpeg" alt="gata tricolor" width="280" height="320"><br>
-      <button class="btnAdoptar" id="btnAdoptar1">Adoptar</button>
-    </aside>
-
-    <aside>
-      <img id="img2" src="./multimedia/gato blanco peludo.jpeg" alt="gato blanco peludo" width="280" height="320"><br>
-      <button class="btnAdoptar" id="btnAdoptar2">Adoptar</button>
-    </aside>
-    
-    <aside>
-      <img id="img3" src="./multimedia/gato gris.jpeg" alt="gato gris" width="280" height="320"><br>
-      <button class="btnAdoptar" id="btnAdoptar3">Adoptar</button>
-    </aside>
-    
-    <aside>
-      <img id="img4" src="./multimedia/gato naranja y blanco.jpeg" alt="gato narnja pecho blanco" width="280" height="320">
-      <button class="btnAdoptar" id="btnAdoptar4">Adoptar</button>
-    </aside>
-    
-    <aside>
-      <img id="img5" src="./multimedia/gato blanco y gris.jpeg" alt="gata tricolor" width="280" height="320">
-      <button class="btnAdoptar" id="btnAdoptar5">Adoptar</button>
-    </aside>
-    
-    <aside>
-      <img id="img6" src="./multimedia/gato marron y blanco.jpeg" alt="gato blanco peludo" width="280" height="320">
-      <button class="btnAdoptar" id="btnAdoptar6">Adoptar</button>
-    </aside>
-    
-    <aside>
-      <img id="img7" src="./multimedia/gato blanco y atigrado peludo.jpeg" alt="gato gris" width="280" height="320">
-      <button class="btnAdoptar" id="btnAdoptar7">Adoptar</button>
-    </aside>
-
-    <aside>
-      <img id="img8" src="./multimedia/gata tricolor.jpeg" alt="gato narnja pecho blanco" width="280" height="320">
-      <button class="btnAdoptar" id="btnAdoptar8">Adoptar</button>
-    </aside>
-
-    <aside>
-      <img id="img9" src="./multimedia/gato negro ojos celestes.jpg" alt="gato negro" width="280" height="320">
-      <button class="btnAdoptar" id="btnAdoptar9">Adoptar</button>
-    </aside>
-
-    <aside>
-      <img id="img10" src="./multimedia/gato atigrado.jpeg" alt="gato atigrado" width="280" height="320"> 
-      <button class="btnAdoptar" id="btnAdoptar10">Adoptar</button>
-    </aside>
-    
-    <aside>
-      <img id="img11" src="./multimedia/gato naranja.jpg" alt="gato narnja" width="280" height="320">
-      <button class="btnAdoptar" id="btnAdoptar11">Adoptar</button>
-    </aside>
-
-    <aside>
-      <img id="img12" src="./multimedia/gato blanco.jpeg" alt="gato blanco" width="280" height="320">
-      <button class="btnAdoptar" id="btnAdoptar12">Adoptar</button>
-    </aside>
-  </div>
-
+  <div class="divImagenes" id="prueba"> 
+    <!-- Acá van los gatitos que están en adopcion-->
+  </div>  
 
   <div class="popup1" id="cuadroDeAdopcion">
 
@@ -94,9 +36,10 @@
           <button id="btnCruz">X</button>
         </div>
         <h2 class="tituloAdoptarPopup">ADOPTAR</h2>
-        <label for="nombre" >Nombre del gatito que querés adoptar:</label><br>
-        <input type="text" name="nombre" class="espaciosAdoptar"><br>    
-        
+
+        <label for="nombrePersona" >¿Cuál es tu nombre?</label><br>
+        <input type="text" name="nombrePersona" id="nombrePersona" class="espaciosAdoptar"><br>    
+
         <label for="entrega">Preferis que:</label><br>
         <select name="entrega" class="espaciosAdoptar" id="seleccionarOpcion">
   
@@ -153,14 +96,14 @@
 
         <h2>¡Coordinemos un punto de entrega!</h2>
   
-        <label for="barrio">Barrio/s de preferencia:</label><br>
-        <input type="text" name="barrio"><br>
+        <label for="barrioRetirar">Barrio/s de preferencia:</label><br>
+        <input type="text" name="barrioRetirar" id="barrioRetirar"><br>
         <br>
-        <label for="celular">Número de contacto:</label><br>
-        <input type="number" name="celular"><br>
+        <label for="celularRetirar">Número de contacto:</label><br>
+        <input type="number" name="celularRetirar" id="celularRetirar"><br>
         <br>
-        <label for="email">Mail:</label><br>
-        <input type="email" name="email" ><br>
+        <label for="emailRatirar">Mail:</label><br>
+        <input type="email" name="emailRetirar" id="mailRetirar" ><br>
         <br>
         <button id="btnEnviarParaRetiro">ENVIAR</button>
   
@@ -173,7 +116,7 @@
 
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="./script.js"></script>
+  <script src="./index.js"></script>
 
 
 </body>

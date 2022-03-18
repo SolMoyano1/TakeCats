@@ -91,7 +91,7 @@ nav{
 
 .divImagenes{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     aside{
         img{
             margin-top: 50px;
@@ -417,7 +417,14 @@ aside{
             margin-bottom: 200px;
 }
 
+// Agradecimiento
 
+#agregarGracias{
+
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
 
 
 /*MOBILE*/
@@ -485,17 +492,9 @@ aside{
     
     /* IMAGENES CELU*/
 
-    div{
+    .divImagenes{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        img{
-            width: 180px;
-            height: 10;
-            margin: 12px;
-            padding: 5px;
-            border: 30px;
-            background-color: white;
-        }
+        grid-template-columns: 1fr;
     }
 
     /*FORMULARIO CELU */
